@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://port-inspector.superstat2011.chatgpt.site/sitemap.xml
