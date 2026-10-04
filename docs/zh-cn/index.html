@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Port Inspector — 本地网络服务诊断</title>
+  <meta name="description" content="在 iPhone 和 iPad 上执行 TCP 与协议感知型 UDP 诊断，按 IP 汇总有响应的服务，扫描报告仅保存在本机。">
+  <meta name="theme-color" content="#050b13">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://port-inspector.superstat2011.chatgpt.site/zh-cn/">
+  <link rel="alternate" hreflang="en" href="https://port-inspector.superstat2011.chatgpt.site/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://port-inspector.superstat2011.chatgpt.site/zh-cn/">
+  <link rel="alternate" hreflang="x-default" href="https://port-inspector.superstat2011.chatgpt.site/">
+  <link rel="icon" type="image/png" href="../assets/images/app-logo.png">
+  <link rel="apple-touch-icon" href="../assets/images/app-logo.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="nav">
+    <a class="brand" href="./" aria-label="Port Inspector 首页"><img src="../assets/images/app-logo.png" alt=""><span>Port Inspector</span></a>
+    <button class="menu-button" type="button" aria-label="打开菜单" aria-expanded="false" data-menu-button>菜单</button>
+    <nav class="nav-menu" aria-label="主导航" data-nav-menu>
+      <a href="#workflow">使用流程</a><a href="#reports">报告</a><a href="#knowledge">知识库</a><a href="#privacy">隐私</a><a href="support/">支持</a><a class="language-link" href="../" lang="en">English</a>
+      <a class="nav-cta" href="#features">查看功能</a>
+    </nav>
+  </div></header>
+
+  <main>
+    <section class="hero"><div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">TCP · 协议感知型 UDP · 本机执行</p>
+        <h1>看清真正有响应的服务。</h1>
+        <p class="lede">检查您管理的网络，只保留有价值的响应信号，并将冗长的探测过程整理为按 IP 汇总的清晰报告。</p>
+        <div class="hero-actions"><a class="button primary" href="#workflow">查看使用流程</a><a class="button secondary" href="#reports">了解报告</a></div>
+        <div class="trust"><span>本机执行</span><span>隐私优先</span><span>无需账户</span></div>
+      </div>
+      <div class="product-demo" aria-label="Port Inspector 报告示例">
+        <div class="demo-head"><div><span class="overline">当前报告</span><code>PI-8A4E…91F2</code></div><span class="complete">已完成</span></div>
+        <div class="metric-grid"><div><strong>254</strong><span>已扫描 IP</span></div><div class="good"><strong>12</strong><span>有响应 IP</span></div><div><strong>242</strong><span>无响应</span></div><div><strong>27</strong><span>服务</span></div></div>
+        <div class="warning"><span>远程访问</span><strong>192.168.1.24 · 3389/TCP</strong><small>请核查访问范围和身份验证配置。</small></div>
+        <div class="host-card"><div class="host-title"><strong>192.168.1.24</strong><span>3 项服务</span></div><div class="port"><code>22</code><span><b>TCP · SSH</b><small>有响应 · 4.8 ms</small></span></div><div class="port risk"><code>3389</code><span><b>TCP · 远程桌面</b><small>建议检查远程访问</small></span></div><div class="port"><code>443</code><span><b>TCP · HTTPS</b><small>有响应 · 7.2 ms</small></span></div></div>
+      </div>
+    </div></section>
+
+    <section class="metrics" aria-label="产品亮点"><div><strong>基础</strong><span>快速检查核心网络服务。</span></div><div><strong>高级</strong><span>按服务类别组织的精选配置。</span></div><div><strong>自定义</strong><span>只检查与本次诊断相关的端口。</span></div><div><strong>本地</strong><span>报告在主动分享前始终留在设备中。</span></div></section>
+
+    <section class="section" id="features"><div class="section-head"><p class="eyebrow">专注诊断</p><h2>从地址范围到可用证据。</h2><p>选择 CIDR 目标和合适的检查层级，只保留有响应的服务，不再浏览成千上万条超时记录。</p></div>
+      <div class="feature-grid"><article><span>01</span><h3>三种扫描模式</h3><p>从核心服务开始，选择高级分类，或设置精简的自定义端口集合。</p></article><article><span>02</span><h3>可控并发</h3><p>可以调节探测并发数和超时时间，扫描引擎遵守固定的诊断预算。</p></article><article><span>03</span><h3>按 IP 汇总</h3><p>每个有响应的 IP 只占一个汇总区块，检测到的 TCP 和 UDP 服务直接显示在其下方。</p></article><article><span>04</span><h3>可移交的报告</h3><p>每次扫描都有唯一报告编号，并可导出为 CSV 或按 IP 分组的 PDF。</p></article></div>
+    </section>
+
+    <section class="dark-band" id="workflow"><div class="band-inner"><div class="section-head"><p class="eyebrow">使用流程</p><h2>更从容地检查子网。</h2></div><ol class="steps"><li><span>01</span><div><h3>确定范围</h3><p>输入您拥有或已获授权检查的主机或 CIDR 地址段。</p></div></li><li><span>02</span><div><h3>选择信号</h3><p>使用基础、高级或自定义模式，并按需要调整超时或并发。</p></div></li><li><span>03</span><div><h3>本机运行</h3><p>设备直接执行诊断，无需 OpsHome 云端账户。</p></div></li><li><span>04</span><div><h3>查看报告</h3><p>完成后自动打开带编号的报告，展示统计、风险提示和按 IP 汇总的结果。</p></div></li></ol></div></section>
+
+    <section class="section" id="reports"><div class="split"><div class="section-head"><p class="eyebrow">报告分析</p><h2>围绕判断组织结果，而不是罗列探测。</h2><p>报告区分扫描范围和实际响应，突出 RDP、VNC、SSH、WinRM 等远程管理服务，并提示需要复核配置的敏感服务。</p><div class="note"><strong>提供上下文，不等于漏洞结论。</strong><span>端口开放仅表示服务对探测作出了响应，本身不能证明存在漏洞或已经暴露到公网。</span></div></div><div class="report-list"><div><b>254</b><span>已扫描 IP</span></div><div><b>12</b><span>有响应 IP</span></div><div><b>23</b><span>TCP 服务</span></div><div><b>4</b><span>UDP 服务</span></div><div class="wide"><b>PI-8A4E360F-2EA0-48A3-9C97-63273C1E91F2</b><span>历史记录与导出文件使用同一个唯一报告编号</span></div></div></div></section>
+
+    <section class="section knowledge" id="knowledge"><div class="section-head"><p class="eyebrow">端口知识</p><h2>先按类别浏览，需要时再查看明细。</h2><p>内置知识库将 IANA 分配整理为系统端口、注册端口、动态/私有端口，以及 TCP、UDP 目录。</p></div><div class="knowledge-grid"><article><code>0–1023</code><h3>系统端口</h3><p>核心基础设施和知名服务分配。</p></article><article><code>1024–49151</code><h3>注册端口</h3><p>厂商和应用服务的注册分配。</p></article><article><code>49152–65535</code><h3>动态与私有端口</h3><p>临时连接和私有用途的端口范围。</p></article></div></section>
+
+    <section class="privacy" id="privacy"><div><p class="eyebrow">隐私优先</p><h2>网络诊断留在本机。</h2><p>Port Inspector 无需账户，也不会把扫描目标和结果上传到 OpsHome 后台。只有在您主动导出时，报告才会离开设备。</p></div><ul><li>诊断从您的 iPhone 或 iPad 直接运行</li><li>有响应的结果保存在 App 私有容器内</li><li>历史记录保留时间由您控制</li></ul></section>
+
+    <section class="cta"><div><p class="eyebrow">负责任地使用</p><h2>仅检查您获准测试的网络。</h2><p>需要产品帮助或报告问题时，请提供 App 版本和不包含敏感信息的示例。</p></div><a class="button primary" href="support/">打开支持页面</a></section>
+  </main>
+
+  <footer><div class="footer-grid"><div class="footer-brand"><img src="../assets/images/app-logo.png" alt=""><div><strong>Port Inspector</strong><span>面向 iPhone 和 iPad 的本地网络服务诊断工具。</span></div></div><div><h2>产品</h2><a href="#features">功能</a><a href="privacy/">隐私</a><a href="support/">支持</a><a href="terms/">条款</a></div><div><h2>OpsHome 产品</h2><a class="product-link" href="https://apps.apple.com/app/id6763890679"><img src="../assets/images/opshome-noc.png" alt="">OpsHome NOC</a><a class="product-link" href="https://apps.apple.com/app/id6791147190"><img src="../assets/images/wifi-health-check.png" alt="">WiFi Health Check</a></div></div><div class="footer-bottom"><span>© 2026 OpsHome。保留所有权利。</span><a href="mailto:support@opshome.run">support@opshome.run</a></div></footer>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
