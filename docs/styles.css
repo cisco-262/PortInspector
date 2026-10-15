@@ -3,3 +3,6 @@
 @media(max-width:620px){.hero-grid{width:calc(100% - 28px);min-height:auto;padding:65px 0 90px}.hero h1{font-size:clamp(2.8rem,14vw,4.3rem)}.hero-actions{flex-direction:column}.metrics,.feature-grid,.steps,.knowledge-grid,.report-list{grid-template-columns:1fr}.metrics div+div{border-left:0;border-top:1px solid var(--line)}.section{padding:82px 0}.privacy{width:100%;padding:52px 20px;border-radius:0}.cta{margin-block:75px;padding:32px 23px;align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:32px}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;gap:8px}.product-demo{padding:13px;border-radius:21px}}
 .language-link{padding:7px 10px;border:1px solid var(--line);border-radius:9px;color:var(--cyan)!important}.language-link:hover{border-color:var(--cyan)}.nav>.language-link{margin-left:auto}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.brand{flex-shrink:0}.brand span{white-space:nowrap}.hero-actions{flex-wrap:wrap}
+@media(min-width:951px){.nav{gap:18px}.nav-menu{gap:16px}.nav-menu>a{font-size:.86rem}}
